@@ -1,46 +1,77 @@
-# Getting Started with Create React App
+리액트 포트폴리오
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+@프로젝트 아이디어 : "TypeScript로 만든 미니 투두& 노트앱"
 
-## Available Scripts
+@ 주요기능 (React + TypeScrit 활용)
 
-In the project directory, you can run:
+React Router를 통한 페이지 이동
+LocalStorage로 데이터 저장(DB 미사용 )
+React Context API로 전역 상태 관리
+Styled-Components 또는 SCSS로 스타일링
+Vercel 또는 Netlify 로 배포
 
-### `npm start`
+@사용기술 & 라이브러리
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+React(useState, useEffect, useContext 활용 )
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+useContext 를 사용한 파라미터 전달 ( props drilling 배제 ) - GlobalContext
+react-router-dom 활용
 
-### `npm test`
+BrowserRouter as Router, Routes, Route, useLocation, useNavigate
+useLocation을 활용한 익스플로러 URL 입력을 통한 이동 방지
+TypeScript (타입 안정성)
+React Router(페이지 이동)
+LocalStorage (로컬 데이터 저장)
+Styled-Components or SCSS(스타일링)
+Vercel/Netlify(배포)
+React 템플릿 SideVar TypeScript적용코드로 수정
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+@이 프로젝트로 어필할 수 있는점
 
-### `npm run build`
+React + TypeScript 를 활용한 강력한 타입 안정성
+Vercel/Netlify로 배포한 실제 동작하는 웹 애플리케이션
+React Router 와 Context API를 이용한 고급 상태 관리 및 페이지 라우팅
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+─
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+기본파일구조설정
+src/
+├──components /
+│ ├──AddTodo.tsx
+│ ├──TodoList.tsx
+├──pages/
+│ ├──Home.tsx
+│ ├──Login.tsx
+│ ├──Signup.tsx
+├──App.tsx
+├──index.tsx
+└──styles/
+└──GlobalStyles.ts
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+React앱 생성
+TypeScript 템플릿 사용 : TypeScript를 사용하는 React 앱 생성
+npx create-react-app mini-todo-app --template typescript
 
-### `npm run eject`
+npx create-react-app ./ --template typescript
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+필수라이브러리 설치하기 ( React Router , Styled-Components )
+cd mini-todo-app
+npm install react-router-dom axios styled-components @types/styled-components
+CSS Styled Components 로 글로벌 스타일 적용.
+styled-components , @types/styled-components 설칠
+npm install styled-components
+npm install @types/styled-components
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm install @fortawesome/fontawesome-free
+npm install bootstrap
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+npm install react-bootstrap
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+import "./assets/css/animate.min.css";
+import "./assets/scss/light-bootstrap-dashboard-react.scss?v=2.0.0";
+import "./assets/css/demo.css";
 
-## Learn More
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+로그인화면 만들기.
