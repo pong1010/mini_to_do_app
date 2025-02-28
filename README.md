@@ -50,7 +50,7 @@ src/
 
 React앱 생성
 TypeScript 템플릿 사용 : TypeScript를 사용하는 React 앱 생성
-npx create-react-app mini-todo-app --template typescript
+npx create-react-app ./ --template typescript
 
 npx create-react-app ./ --template typescript
 
