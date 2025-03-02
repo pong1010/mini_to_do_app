@@ -62,9 +62,9 @@ styled-components , @types/styled-components 설칠
 npm install styled-components
 npm install @types/styled-components
 
-npm install @fortawesome/fontawesome-free
+npm install @fortawesome/fontawesome-free bootstrap react-bootstrap
 npm install bootstrap
-
+    
 npm install react-bootstrap
 
 import "./assets/css/animate.min.css";
